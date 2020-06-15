@@ -1,7 +1,39 @@
 <!DOCTYPE html>
 <html>
 <style>
+body {
+    margin: 0;
+    padding: 0;
+}
+    .last {
+        border-top: 0.5px solid darkgrey;
+    }
+.leftbottom {
+    left: 0; 
+    bottom: 0;
+    float: left;
+    text-align: left;
+}
+    .country {
+        padding: 10px;
+        margin-left: 45px;
+    }
+.footer {
+    font-size: 14px;
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:rgba(206, 198, 198, 0.26);
+ text-align: left;
+  border-top: 0.5px solid darkgrey;
+  color: #222;
+}
 
+.bottomiger {
+    float: right;
+    
+}
 
 #anmelden {
     background-color: rgb(47, 87, 196);
@@ -157,24 +189,32 @@ text-align: center;
 <button type="button" id="search">Google-Suche</button> 
 <button type="button" id="lucky">Auf gut Glück!</button>
 </div>
+</div>
 <div id="offer">
 Google angeboten auf: <a href="www.google.de">Englisch</a>
 </div>
-</body>
-<footer>
 
-    <div id="country">
+<div id="footer" class="footer">
+
+    <div class="country">
         Deutschland
     </div>
-    <div class="index">
-        <div>Datenschutzerklärung</div>
-        <div>Nutzungsbedingungen</div>
-        <div>Einstellungen</div>
-        <div>Werbeprogramme</div>
-<div>Unternehmen</div>
-<div>Wie funktioniert die Google-Suche?</div>
+    <div class="last">
+    <div class="bottomiger">
+    <ul>
+        <li>Datenschutzerklärung</li>
+        <li>Nutzungsbedingungen</li>
+        <li>Einstellungen</li>
     </div>
-</footer>
+        <div class="leftbottom">
+        <ul><li>Werbeprogramme</li>
+<li>Unternehmen</li>
+<li>Wie funktioniert die Google-Suche?</li>
+    </ul>
+    </div>
+</div>
+</div>
+</body>
 
 
 </html>
